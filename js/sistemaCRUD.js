@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const cardBody = document.getElementById(`card-body-${id}`);
         cardBody.querySelectorAll(".editable").forEach(el => {
             el.contentEditable = true;
+            el.style.border = "2px solid orange";
+            el.style.borderRadius = "5px";  
+            el.style.padding = "0 5px";
         });
         cardBody.querySelector(".btn-confirmar").style.display = "inline-block";
         cardBody.querySelector(".btn-cancelar").style.display = "inline-block";
